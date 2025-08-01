@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Stars from './components/stars.jsx'
+import Stars from './components/stars.js'
 import './App.css'
 
 function App() {
 
   return (
-    <Stars count={3}/>
+    <Stars count={2}/>
 );
 }
 

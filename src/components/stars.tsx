@@ -1,7 +1,11 @@
 import React, { useRef, useState } from 'react'
-import Star from './star.jsx'
+import Star from './star.js'
 
-export default function Stars({ count = 0 }) {
+interface StarsProps {
+  count: number;
+}
+
+export default function Stars({ count = 0}: StarsProps) {
     
   if (count < 1 || count > 5) {
     return null; 
